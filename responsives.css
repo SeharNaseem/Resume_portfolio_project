@@ -1,0 +1,325 @@
+@media screen and (max-width:768px) {
+
+  /* .................................... here we have navbar codes.................................... */
+  .menu  {
+  display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: x-large;
+    padding: 20px;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  /*.......................... here we start myself code...................................... */
+
+  header {
+    background-image: cover;
+  }
+
+  .container {
+    margin-top: 30PX;
+  }
+
+  .boxed {
+    display: block;
+    /* width: 500px; */
+
+  }
+
+  .intro {
+    font-size: 11px;
+    padding-bottom: 10px;
+    /* padding-top: 20px; */
+    margin-top: -10px;
+  }
+
+  .image {
+    width: 250px;
+    height: 200px;
+    padding-left: 40px;
+  }
+
+  /*.......................here we do about me code............................................  */
+  .me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me img {
+    width: 250px;
+  }
+
+  .A-m {
+    padding-top: 5%;
+    font-size: small;
+  }
+
+  .courses ul li {
+    margin: 12px 4px;
+  }
+
+  /* .............................feather project ................................ */
+
+  .FP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding: 2%;
+    padding-top: 1%;
+    margin: auto;
+    padding-right: 10%;
+    align-items: center;
+  }
+
+  .featured-project {
+    height: 770px;
+  }
+  .wrap {
+    font-size: small;
+
+  }
+
+  /* ...............................skill bar....................................................... */
+  .skill-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Professional {
+    width: 90%;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .radial-bars {
+    padding: 0%;
+  }
+
+  .container1 {
+    width: 80%;
+  }
+
+  .container1 .heading {
+    text-align: center;
+  }
+
+  /* ...........................work experience.................................... */
+  .work-experience {
+    background-image: none;
+    background-color: rgb(243, 243, 243);
+    height: 1186px;
+    width: 100%;
+  }
+
+
+  .edu-wor-exper {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .edu {
+    width: 90%;
+    height: 160px;
+
+  }
+
+  .edu p {
+    font-size: 12px;
+  }
+
+  /* ..........................recent portfolio............................ */
+
+  .grid {
+    grid-template-columns: auto ;
+    /* gap: 15px 0px; */
+    width: 100%;
+    margin: auto;
+    place-items: center;
+    place-content: center;
+  }
+
+  .image4 img {
+    margin-top: 0%;
+    width: 90%;
+    margin: auto;
+  }
+
+  .image5 img {
+    margin-top: 0%;
+    width: 90%;
+  }
+
+  .image8 img {
+    margin-top: -0%;
+    width: 90%;
+  }
+
+  /* ..............................interested..................................... */
+ .interested {
+  margin-top: 5%;
+ }
+  .interested-work {
+    padding-left: 20px;
+    /* padding-top: 50px; */
+    /* background-color: #202026; */
+    width: 100%;
+  }
+
+  .contact a {
+    text-decoration: none;
+    background: rgba(56, 194, 172, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+
+  /* ....................price table.......................... */
+  .works {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .price-table .works {
+    width: 100%;
+    margin: 5px;
+    gap: 20px;
+  }
+
+  .works .work {
+    width: 90%;
+    height: 460px;
+  }
+
+  /* ////////////////////////////recent portfolio..................... */
+  .boxes{
+    display: grid;
+    grid-template-columns: auto ;
+  }
+  .featured{
+    height: 1900px;
+  }
+
+  /* ..............................client review............................ */
+  .Review {
+    margin-top: 500px;
+  }
+  .womens{
+      width: 90%;
+      display: grid;
+      grid-template-columns: auto
+  }
+  .women {
+  height: 350px;
+  }
+
+  /* ..........................contact me ................................. */
+  .contact-me {
+    /* padding-left: 300px; */
+    text-align: center;
+    margin-top: 667px;
+  }
+
+  .connected {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* width: 800px; */
+    /* width: 90%; */
+    margin-top: -40px;
+    /* margin-left: 185px; */
+  }
+
+  .inputs {
+    width: 55%;
+  }
+
+  .textarea {
+    width: 55%;
+  }
+
+  .button {
+    width: 55%;
+  }
+  .address{
+    width: 100%;
+    gap: 10px;
+  }
+  .inputs, .textarea{
+    width: 100%;
+  }
+  .input{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .courses ul li {
+    margin: 15px 4px;
+  }
+  .interest {
+    margin-top: 5%;
+   }
+  .img img {
+    width: 400px;
+    margin: auto;
+  }
+  .wrap {
+    font-size: small;
+  }
+  .grid img {
+    width: 280px;
+  
+  }
+  .connected{
+    width: 90%;
+    margin: auto;
+  }
+  /* .Review {
+    margin-top: 380px;
+  } */
+  .featured{
+    height: 1220px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .skill-bar {
+    font-size: small;
+  }
+
+  .grid {
+    width: 90%;
+   display: grid;
+   place-items: center;
+   margin: auto;
+  }
+  .img img {
+    width: 300px;
+    margin: auto;
+  }
+  .grid img {
+    width: 280px;
+  }
+.box1 img{
+  width: 300px;
+}
+.box{
+  width: 90%;
+  gap: 20px;
+}
+.box1{
+  width: 300px;
+}
+}

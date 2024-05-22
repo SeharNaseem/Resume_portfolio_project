@@ -1,0 +1,784 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* .................................... here we have navbar codes............................................. */
+header {
+  width: 100%;
+  background-image: url('img/Section.png');
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-around;
+ /* background-color: #0BCEAF; */
+}
+.menu a {
+ margin: 10px;
+  text-decoration: none;
+  position: relative;
+  color: black;
+  font-weight: bolder;
+}
+
+.menu a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid rgba(56, 194, 172, 1);
+  transition: 0.4s linear;
+
+}
+
+.menu a:hover:before {
+  width: 90%;
+}
+
+.resume a {
+  text-decoration: none;
+  background: rgba(56, 194, 172, 1);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/*.......................... here we start myself code...................................... */
+.container {
+  margin-top: 60PX;
+}
+
+.boxed {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 80px;
+
+}
+
+.intro .hello {
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #0BCEAF;
+}
+
+.image {
+  height: 350px;
+  width: 100%;
+}
+
+.intro {
+  font-size: 20px;
+}
+
+.intro a {
+  color: black;
+  text-decoration: none;
+}
+
+.awesome {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7px;
+  margin-top: 30px;
+  width: 200px;
+}
+
+/*............................ here we start about me ........................ */
+.me {
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-top: 5%;
+}
+
+.about-me img {
+  width: 500px;
+}
+
+.courses ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.courses ul li {
+  margin: 0px 6px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.courses ul li span {
+  border-style: solid;
+  border: 5px solid rgba(56, 194, 172, 1);
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.courses .CV {
+  text-decoration: none;
+  background: rgba(56, 194, 172, 1);
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+/* ....................... here we start what i do page..........................  */
+.main .hd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 50px;
+}
+
+.main .des-devel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.des-devel .ui-web-app {
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px 2px lightgray;
+}
+
+.ui-web-app i {
+  color: #ED7256;
+  font-size: x-large;
+}
+
+/*...................... here we start the featured project page.............................. */
+.featured-project {
+  margin-top: 70px;
+  width: 100%;
+  height: 700px;
+  background-image: url('img/Section.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.featured-project h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.FP {
+  margin-top: 40px;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-top: 5%;
+  gap: 30px;
+}
+
+.img img {
+  width: 550px;
+  margin: auto;
+}
+.wrap {
+  padding-top: 0%;
+  font-size: small;
+}
+.wrap h5 {
+  color: rgba(56, 194, 172, 1);
+}
+
+.wrap a {
+  text-decoration: none;
+  background: rgba(56, 194, 172, 1);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+/*........................ here we do skill bar coding .........................*/
+.skill-bar {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  display: flex;
+  flex: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heading {
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+.container1 {
+  width: 35%;
+  height: 410px;
+}
+
+.technical-bars .bar {
+  margin: 30px 0;
+}
+
+.technical-bars .bar:first-child {
+  margin-top: 0;
+}
+
+.technical-bars .bar:last-child {
+  margin-bottom: 0;
+}
+.technical-bars .bar .info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.technical-bars .bar .info span {
+  animation: showtext 0.5s 1s linear forwards;
+
+}
+
+.technical-bars .bar .progress-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: gray;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.technical-bars .bar .progress-line span {
+  height: 100%;
+  background-color: rgba(56, 194, 172, 1);
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1);
+}
+
+.progress-line.java span {
+  width: 86%;
+}
+
+.progress-line.javascript span {
+  width: 46%;
+}
+
+.progress-line.python span {
+  width: 38%;
+}
+
+.progress-line.php span {
+  width: 17%;
+}
+
+.radial-bars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-right: 50px;
+
+}
+
+.radial-bars .radial-bar {
+  width: 50%;
+  height: 170px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.radial-bars .radial-bar svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 120px;
+  height: 160px;
+}
+
+.radial-bars .radial-bar .progress-bar {
+  stroke-width: 10;
+  stroke: grey;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+  100% {
+    stroke-dashoffset: -1;
+  }
+}
+
+.path {
+  stroke-width: 10;
+  stroke: rgba(56, 194, 172, 1);
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+.path-1 {
+  animation: animate-path1 1s 1s linear forwards;
+}
+
+.path-2 {
+  animation: animate-path2 1s 1s linear forwards;
+}
+
+.path-3 {
+  animation: animate-path3 1s 1s linear forwards;
+}
+
+.path-4 {
+  animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+  100% {
+    stroke-dashoffset: 50;
+  }
+}
+
+@keyframes animate-path2 {
+  100% {
+    stroke-dashoffset: 175;
+  }
+}
+
+@keyframes animate-path3 {
+  100% {
+    stroke-dashoffset: 75;
+  }
+}
+
+@keyframes animate-path4 {
+  100% {
+    stroke-dashoffset: 125;
+  }
+}
+
+.radial-bar .text{
+  text-align: center;
+}
+.radial-bar .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5 1s linear forwards;
+}
+
+.progress-bar .text {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: -5px;
+  transform: translate(-50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showtext 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+/* ...................here we do now education and work experience ........................*/
+.work-experience {
+  margin-top: 60px;
+  width: 100%;
+  height: 700px;
+  background-image: url('img/Section.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.edu-wor-exper {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+
+
+.education h1 {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.edu {
+  width: 450px;
+  height: 150px;
+  padding: 10px 20px;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 0px 5px 10px 5px lightgray;
+}
+
+.edu span {
+  color: rgba(56, 194, 172, 1);
+  ;
+}
+
+.edu .year {
+  color: rgba(56, 194, 172, 1);
+}
+
+.edu ul li {
+  margin-left: 20px;
+}
+
+/*...................... here we put portfolio images ........................................*/
+.portfolio {
+padding-top: 20px;
+  text-align: center;
+}
+
+.grid {
+  width: 800px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+}
+
+.image5 img {
+  margin-top: -43%;
+}
+
+.image8 img {
+  margin-top: -43%;
+}
+
+.grid img {
+  width: 250px;
+}
+
+.image4 img {
+  margin-top: -10%;
+}
+
+/*............................ here we do interested to work page................................ */
+.interest {
+  width: 100%;
+  height: 300px;
+  background-image: url('img/Section.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.interested-work {
+  /* padding-left: 200px; */
+  padding-top: 75px;
+  /* background-color: #202026; */
+  width: 85%;
+  margin: auto;
+}
+
+.contact {
+  text-decoration: none;
+  background: rgba(56, 194, 172, 1);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(56, 194, 172, 1)
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+/* /////////////////////////////// now pricing page //////////////////////////////////// */
+.price-table .pt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 50px;
+}
+
+.price-table .works {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  /* gap: 30px; */
+
+}
+
+.works .work {
+  padding-top: 50px;
+  width: 300px;
+  height: 430px;
+  text-align: center;
+  box-shadow: 2px 5px 10px 2px lightgray;
+}
+
+.work i {
+  color: rgba(56, 194, 172, 1);
+  font-size: x-large;
+}
+
+.works .work .pr {
+  color: rgba(56, 194, 172, 1);
+  ;
+}
+
+.works .work .pr:before {
+  content: ' \0024';
+}
+
+.hire a {
+  text-decoration: none;
+  background: rgba(56, 194, 172, 1);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+/* ..............................recent porfolio................................... */
+.featured{
+  /* width: 90%; */
+  margin: auto;
+  height: 700px;
+}
+.featured-heading{
+  text-align: center;
+  padding: 20px;
+}
+.boxes{
+  margin: auto;
+  place-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  /* grid-template-columns: auto auto auto; */
+  justify-content: center;
+  gap: 20px;
+  height:450px;
+}
+.box img{
+  width:350px;
+}
+.heading{
+  font-size: 27px;
+  color: #202026;
+padding: 3px 10px;
+}
+.sub-heading1{
+  font-weight: bold;
+  font-size: 16px;
+  padding: 3px 10px;
+}
+.sub-heading2{
+  font-size: 15px;
+  color: #202026;
+  padding: 3px 10px;
+}
+/* .link{
+  color: #0BCEAF;
+  font-size: 20px;
+  padding: 3px 10px ;
+  margin-bottom: 30px;
+  text-decoration: none;
+} */
+.box {
+  width:70%;
+  margin: auto;
+  display: grid;
+  /* place-content: center; */
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  height: 450px;
+}
+.box1 img {
+  width: 400px;
+}
+.box1 {
+  background-color: white;
+  box-shadow: 3px 5px 10px 5px rgb(223, 218, 218);
+  height: 510px;
+  width: 400px;
+}
+.heading {
+  font-size: 27px;
+  color: #202026;
+  padding: 3px 10px;
+}
+.sub-heading1 {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 3px 10px;
+}
+.sub-heading1 span {
+  color: #0BCEAF;
+}
+.sub-heading2 {
+  font-size: 15px;
+  color: #202026;
+  padding: 3px 10px;
+}
+.link {
+  color: #0BCEAF;
+  font-size: 20px;
+  padding: 3px 10px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+/* .................................here we do client reviews....................................... */
+.Review {
+  padding-top: 0px;
+  padding-bottom: 80px;
+ text-align: center;
+}
+
+.womens {
+  width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  height: 250px;
+}
+
+.women img {
+  width: 100px;
+  margin: 20px 75px;
+}
+
+.women {
+  background-color: white;
+  box-shadow: 3px 5px 10px 5px rgb(223, 218, 218);
+  height: 330px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+/* ........................... ....Contact me................................................... */
+.contact-me{
+  padding-top: 100px;
+  padding-bottom: 80px;
+  text-align: center;
+  
+ }
+.connected {
+width: 70%;
+margin: auto;
+display: flex;
+gap: 40px;
+}
+
+.address {
+width: 400px;
+height: 120px;
+background-color: white;
+box-shadow: 3px 3px 5px 1px rgb(204, 201, 201);
+display: flex;
+align-items: center;
+gap: 40px;
+padding: 12px;
+}
+
+.address-icon {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.left {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.input {
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 90%;
+}
+
+.inputs {
+border: 1px solid gray;
+border-radius: 5px;
+padding: 5px 10px;
+width: 90%;
+height: 50px;
+box-shadow: 3px 3px 5px 1px rgb(204, 201, 201);
+}
+
+.textarea {
+border: 1px solid gray;
+border-radius: 5px;
+padding: 5px 10px;
+width: 90%;
+height: 200px;
+box-shadow: 3px 3px 5px 1px rgb(204, 201, 201);
+
+}
+
+.button {
+width: 90%;
+border-radius: 40px;
+padding: 14px;
+border: none;
+background-color: #0BCEAF;
+color: white;
+font-size: 20px;
+box-shadow: 3px 3px 5px 1px rgb(204, 201, 201);
+}
+
